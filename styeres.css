@@ -1,0 +1,258 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal}
+
+
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+:root{
+    --cor0:rgb(197, 235, 214);
+    --cor1:rgb(131, 225, 173);
+    --cor2:rgb(61, 220, 132);
+    --cor3:rgb(47, 168, 102);
+    --cor4:rgb(26, 92, 55);
+    --cor5:rgb(6, 61, 30);
+    --fontepadrao: arial, verdana, helvetica, sans-serif;
+    --fontedestaque: 'Bebas Neue', cursive;
+    --fonteandroid: 'android', cursive;
+}
+
+
+
+body{
+    background-color:var(--cor0);
+    font-family: var(--fontepadrao);
+
+}
+
+
+header{
+    background-image:linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top:30px;
+
+}
+
+header h1{
+    color: white;
+    font-family: var(--fontedestaque);
+    margin-bottom: 20px;
+    font-family: var(--fontepadrao);
+    font-size: 3em;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.383);
+}
+
+header p{
+    color:white;
+    font-family: var(--fontepadrao);
+    font-size: 1.2em;
+    max-width: 600px;
+    margin:auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.383);
+}
+
+
+nav{
+    background-color: var(--cor5);
+    color:white;
+    padding:10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.341);
+}
+nav a{
+    text-decoration: none;
+    cursor:pointer;
+    padding:10px;
+    transition-duration: 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    background-color: var(--cor4);
+    color:var(var(--cor5));
+    border-radius:10px;
+
+}
+
+img{
+    width: 100%;
+}
+main{
+    background-color:white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    max-width: 900px;
+    min-width: 320px;
+    margin:auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.456);
+}
+
+
+
+main h1{
+    color: var(--cor5);
+    font-family: var(--fonteandroid);
+    font-size: 1.8em;
+
+}
+
+main h2{
+    color: var(--cor5);
+    font-family: var(--fonteandroid);
+    font-size:1.3em;
+    color:var(--cor4);
+    text-indent: 10px;
+    background-image: linear-gradient( to right, var(--cor1), transparent);
+    padding:2px 0px;
+    
+}
+
+main p{
+    text-indent: 20px;
+    text-align: justify;
+    margin: 15px 0px;
+    line-height: 2em;
+    font-size: 1em;;
+}
+
+
+main img.pequena{
+    max-width: 350px;
+    display:block;
+    margin:auto;
+}
+
+
+main a{
+    text-decoration:none;
+    transition: all 0.1s ease;
+    
+}
+
+main a:hover{
+    text-decoration:underline;
+    transform: scale(1.1);
+    font-size: 17px;
+    
+}
+
+main a:active{
+    color: rgb(3, 90, 42)
+}
+
+abbr{
+    text-decoration: none;
+}
+
+main span a{
+    color: rgb(1, 134, 61);
+}
+
+
+    
+.titulo{
+    font-family: 'idroid', sans-serif;
+    margin-left: 6px;
+    color:rgb(12, 102, 25);
+    padding: 10px 10px 0px 10px;
+    margin-bottom: 5px;
+    
+    }
+
+
+.verde{
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+
+a.externo::after{
+    content: '\1F517'
+
+}
+
+a.externo{
+    color: var(--cor5);
+    font-weight: bold
+}
+
+
+
+ul li{
+    padding-left: 10px;
+}
+
+footer{
+    background-color: var(--cor5);
+    color:white;
+    text-align: center;
+    font-size: 0.8em;
+    padding:5px;
+}
+
+.fundoVerde{
+    background-color:var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 58.7%;
+    position: relative;
+}
+
+
+section iframe{
+    display:block;
+    position: absolute;
+    margin:auto;
+    padding:10px;
+    top: 3%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    
+}
+
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.421);
+}
+
+
+aside > h3{
+    background-color: var(--cor4);
+    color: white;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+    font-weight: bolder;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
